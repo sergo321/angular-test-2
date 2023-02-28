@@ -1,0 +1,10 @@
+.slider {
+    position: relative;
+    top: 300px;
+    width: 35%;
+    left: 35%;
+}
+
+ng-image-slider {
+    width: 50%;
+}

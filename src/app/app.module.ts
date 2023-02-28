@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { TestComponent } from './test/test.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,9 @@ import { ContactComponent } from './contact/contact.component';
     NotfoundComponent,
     AboutComponent,
     ContactComponent,
+    TestComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule,NgImageSliderModule],
   providers: [],
   bootstrap: [AppComponent],
 })

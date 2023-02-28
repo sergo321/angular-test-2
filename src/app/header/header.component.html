@@ -1,0 +1,40 @@
+<header>
+  <nav class="main_navigation">
+    <ul>
+      <li
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLinkActive]="'active'"
+        [routerLink]="'/'"
+      >
+        home
+      </li>
+      <li [routerLinkActive]="'active'" [routerLink]="'about'">about</li>
+      <li [routerLinkActive]="'active'" [routerLink]="'contact'">contact</li>
+    </ul>
+  </nav>
+  <div class="burger_menu">
+    <i class="fa-solid fa-bars"> </i>
+  </div>
+  <div class="nav_menu hidden">
+    <ul>
+      <li
+        class="home"
+        [routerLinkActiveOptions]="{ exact: true }"
+        [routerLinkActive]="'active'"
+        [routerLink]="'/'"
+      >
+        home
+      </li>
+      <li class="about" [routerLinkActive]="'active'" [routerLink]="'about'">
+        about
+      </li>
+      <li
+        class="contact"
+        [routerLinkActive]="'active'"
+        [routerLink]="'contact'"
+      >
+        contact
+      </li>
+    </ul>
+  </div>
+</header>

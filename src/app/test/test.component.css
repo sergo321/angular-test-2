@@ -1,10 +1,16 @@
 .slider {
-    position: relative;
-    top: 300px;
-    width: 35%;
-    left: 35%;
+  position: relative;
+  top: 20px;
+  width: 750px;
+  box-shadow: 0px 0px 28px 7px rgba(255, 255, 0, 0.578);
 }
 
 ng-image-slider {
-    width: 50%;
+  width: 80%;
+}
+
+.ng-image-slider .ng-image-slider-container .main .next,
+.ng-image-slider .ng-image-slider-container .main .prev {
+  background-color: transparent !important;
+  left: 10000px;
 }

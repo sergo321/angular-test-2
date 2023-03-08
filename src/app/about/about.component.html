@@ -4,30 +4,40 @@
       <div class="layers">
         <div class="layer__header">
           <div class="layers__caption">About Page</div>
-          <div class="layers__title">Fairy Forest</div>
+          <div class="layers__title">Scroll down</div>
         </div>
         <div
           class="layer layers__base"
-          style="background-image: url(./assets/img/layer-base.png)"></div>
+          style="background-image: url(./assets/img/layer-base.png)"
+        ></div>
         <div
           class="layer layers__middle"
-          style="background-image: url(./assets/img/layer-middle.png)"></div>
+          style="background-image: url(./assets/img/layer-middle.png)"
+        ></div>
         <div
           class="layer layers__front"
-          style="background-image: url(./assets/img/layer-front.png)"></div>
+          style="background-image: url(./assets/img/layer-front.png)"
+        ></div>
       </div>
     </header>
 
     <article
       class="main-article"
-      style="background-image: url(./assets/img/dungeon.jpg)">
-      <div class="main-article__content">
-        <h2 class="main-article__header">To be continued</h2>
+      style="background-image: url(./assets/img/dungeon.jpg)"
+    >
+      <div class="main-article__content" id="scroll">
+        <h2 class="main-article__header">who we are?</h2>
         <p class="main-article__paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero
-          architecto laborum ab est quo cupiditate. Laboriosam cupiditate nihil
-          obcaecati quisquam itaque eveniet ipsa nisi architecto quae dicta.
-          Beatae, earum?
+          <ngx-typed-js
+            [strings]="[
+              'we are  currently studying front-end development at IT-Step Academy.we are passionate about designing and building beautiful,user-friendly websites that provide an enjoyable experience for visitors. I love learning about the latest web design trends and technologies and incorporating them into my work. When I am not coding,you can usually find me exploring new cafes around town or practicing my guitar skills. we are excited to see where my career in web development takes me and am always eager to takeon new challenges and expand my skills.'
+            ]"
+            [loop]="false"
+            [shuffle]="true"
+            [typeSpeed]="50"
+          >
+            <h1 class="typing"></h1>
+          </ngx-typed-js>
         </p>
       </div>
       <div class="copy">© Design By Sergo, George, Mariami</div>

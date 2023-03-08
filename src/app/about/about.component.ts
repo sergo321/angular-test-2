@@ -11,6 +11,8 @@ import ScrollSmoother from 'gsap/ScrollSmoother';
 export class AboutComponent implements OnInit {
   smoother: any;
   constructor() {}
+ 
+  
 
   ngOnInit(): void {
     gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
@@ -28,3 +30,9 @@ export class AboutComponent implements OnInit {
     }, 50);
   }
 }
+
+
+
+
+
+

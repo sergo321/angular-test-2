@@ -8,24 +8,35 @@
         </div>
         <div
           class="layer layers__base"
-          style="background-image: url(../../assets/img/layer-base.png)"></div>
+          style="background-image: url(../../assets/img/layer-base.png)"
+        ></div>
         <div
           class="layer layers__middle"
-          style="
-            background-image: url(../../assets/img/layer-middle.png);
-          "></div>
+          style="background-image: url(../../assets/img/layer-middle.png)"
+        ></div>
         <div
           class="layer layers__front"
-          style="background-image: url(../../assets/img/layer-front.png)"></div>
+          style="background-image: url(../../assets/img/layer-front.png)"
+        ></div>
       </div>
     </header>
 
     <article
       class="main-article"
-      style="background-image: url(../../assets/img/dungeon.jpg)">
+      style="background-image: url(../../assets/img/dungeon.jpg)"
+    >
       <div class="main-article__content">
         <h2 class="main-article__header">Slider</h2>
-        <app-test></app-test>
+        <div class="slider">
+          <ng-image-slider
+            [images]="imgCollection"
+            #nav
+            [infinite]="true"
+            [autoSlide]="1"
+            [imageSize]="{ width: '100%', height: 380 }"
+            slideImage="1"
+          ></ng-image-slider>
+        </div>
       </div>
       <div class="copy">© Design By Sergo, George, Mariami</div>
     </article>

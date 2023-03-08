@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-
 @Component({
   selector: "app-test",
   templateUrl: "./test.component.html",
@@ -8,7 +7,9 @@ import { Component, OnInit } from "@angular/core";
 export class TestComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+   
+  }
   imgCollection: Array<object> = [
     {
       image: "../../assets/sliderimg/11.jpg",
@@ -41,4 +42,5 @@ export class TestComponent implements OnInit {
       alt: "Image 5",
     },
   ];
+
 }

@@ -9,7 +9,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { TestComponent } from './test/test.component';
-import { NgImageSliderModule } from 'ng-image-slider';
+import { NgImageSliderModule } from 'ng-image-slider'
+import {NgxTypedJsModule} from 'ngx-typed-js'
 
 @NgModule({
   declarations: [
@@ -20,8 +21,9 @@ import { NgImageSliderModule } from 'ng-image-slider';
     AboutComponent,
     ContactComponent,
     TestComponent,
+    
   ],
-  imports: [BrowserModule, AppRoutingModule,NgImageSliderModule],
+  imports: [BrowserModule, AppRoutingModule,NgImageSliderModule,NgxTypedJsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
